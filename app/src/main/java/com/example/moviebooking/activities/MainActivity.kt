@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch(Dispatchers.IO) {
             delay(Constants.DELAY_TIME)
-            val intent = Intent(this@MainActivity, LogInActivity::class.java)
+            val intent = Intent(this@MainActivity, SignUpActivity::class.java)
             startActivity(intent)
             finish()
         }

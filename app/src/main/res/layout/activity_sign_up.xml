@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_color"
-    tools:context=".activities.LogInActivity" >
+    tools:context=".activities.SignUpActivity" >
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgLogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginVertical="@dimen/_50sdp"
+        android:layout_marginVertical="@dimen/_30sdp"
         android:scaleType="fitXY"
         android:src="@drawable/app_logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,8 @@
             android:id="@+id/tfEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -65,47 +66,29 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatCheckBox
-        android:id="@+id/cbRememberMe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_20sdp"
-        android:buttonTint="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/fieldPassword"
-        app:layout_constraintTop_toBottomOf="@+id/fieldPassword" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tv_remember_me"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_15ssp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/cbRememberMe"
-        app:layout_constraintStart_toEndOf="@+id/cbRememberMe" />
-
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_marginVertical="@dimen/_20sdp"
         android:background="@drawable/btn_style"
-        android:text="@string/btn_login"
+        android:text="@string/btn_sign_up"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbRememberMe" />
+        app:layout_constraintTop_toBottomOf="@+id/fieldPassword" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvSignUp"
+        android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/_20sdp"
-        android:text="@string/tv_dont_have_account"
+        android:text="@string/tv_already_account"
         android:textColor="@color/black"
         android:textSize="@dimen/_15ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
