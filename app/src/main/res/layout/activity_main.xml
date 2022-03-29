@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_color"
     tools:context=".activities.MainActivity" >
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/splashScreenImage"
         android:layout_width="@dimen/_300sdp"
-        android:layout_height="@dimen/_200sdp"
-        android:src="@drawable/ic_baseline_movie_filter_24"
+        android:layout_height="@dimen/_300sdp"
+        android:src="@drawable/app_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
