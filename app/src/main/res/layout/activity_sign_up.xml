@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_color"
-    tools:context=".activities.SignUpActivity" >
+    tools:context=".activities.SignUpActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgLogo"
@@ -33,14 +33,13 @@
         app:hintTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" >
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tfEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,12 +56,13 @@
         app:hintTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fieldEmail" >
+        app:layout_constraintTop_toBottomOf="@+id/fieldEmail">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tfPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -8,4 +8,8 @@
     <string name="btn_sign_up">Sign Up</string>
     <string name="tv_already_account">Already have an account? Login</string>
     <string name="tv_dont_have_account">Don\'t have an account? Sign up</string>
+    <string name="invalid_credentials">Enter proper credentials</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login">Login</string>
+    <string name="signup_successful">User added successfully</string>
 </resources>
