@@ -1,6 +1,7 @@
 package com.example.moviebooking.activities
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -52,6 +53,7 @@ class LogInActivity : AppCompatActivity() {
                         editor.apply()
                     }
                     Toast.makeText(this, getString(R.string.login_successful), Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this,HomeScreenActivity::class.java))
                 }
             }.addOnFailureListener { exception ->
                 Toast.makeText(this, exception.toString(), Toast.LENGTH_LONG).show()
