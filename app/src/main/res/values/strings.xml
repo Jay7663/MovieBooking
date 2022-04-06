@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">MovieBooking</string>
     <string name="login_screen">Login Screen</string>
-    <string name="tv_hint_email">Enter Email…</string>
-    <string name="tv_hint_password">Enter Password…</string>
+    <string name="tv_hint_email">Email</string>
+    <string name="tv_hint_password">Password</string>
     <string name="btn_login">Log In</string>
     <string name="tv_remember_me">Remember Me</string>
     <string name="btn_sign_up">Sign Up</string>
@@ -14,4 +14,22 @@
     <string name="login_successful">Login successful</string>
     <string name="login">Login</string>
     <string name="signup_successful">User added successfully</string>
+    <string name="submit">Submit</string>
+    <string name="tv_hint_first_name">First Name</string>
+    <string name="tv_hint_last_name">Last Name</string>
+    <string name="header">HEADER</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="bronze">Bronze</string>
+    <string name="item">ITEM</string>
+    <string name="tier_a_seat_name">A%1$d</string>
+    <string name="tier_b_seat_name">B%1$d</string>
+    <string name="tier_c_seat_name">C%1$d</string>
+    <string name="tier_d_seat_name">D%1$d</string>
+    <string name="tier_e_seat_name">E%1$d</string>
+    <string name="tier_f_seat_name">F%1$d</string>
+    <string name="movie_booking">Movie Booking</string>
+    <string name="empty" />
+    <string name="logout">Logout</string>
+    <string name="signup">Sign up</string>
 </resources>

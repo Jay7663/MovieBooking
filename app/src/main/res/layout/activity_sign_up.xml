@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_color"
     tools:context=".activities.SignUpActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgLogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginVertical="@dimen/_30sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
         android:scaleType="fitXY"
         android:src="@drawable/app_logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,19 +20,65 @@
         app:layout_constraintWidth_percent="0.6" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fieldEmail"
+        android:id="@+id/tiFirstName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_marginVertical="@dimen/_20sdp"
-        android:hint="@string/tv_hint_email"
+        android:hint="@string/tv_hint_first_name"
         android:textColorHint="@color/black"
         app:boxStrokeColor="@color/black"
         app:hintTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiLastName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:hint="@string/tv_hint_last_name"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiFirstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fieldEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:hint="@string/tv_hint_email"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiLastName">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tfEmail"
@@ -49,7 +94,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
         android:hint="@string/tv_hint_password"
         android:textColorHint="@color/black"
         app:boxStrokeColor="@color/black"

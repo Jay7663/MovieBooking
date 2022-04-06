@@ -10,14 +10,16 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviebooking.R
-import com.example.moviebooking.constants.Constants.IMAGE_BASE_URL
+import com.example.moviebooking.common.Constants.IMAGE_BASE_URL
+import com.example.moviebooking.interfaces.MoviesOnClickInterface
 import com.example.moviebooking.models.Result
 import java.net.URL
 import java.util.concurrent.Executors
 
-class MoviesAdapter(private var movieList: ArrayList<Result>) :
+class MoviesAdapter(private var movieList: ArrayList<Result>, private var itemOnClickInterface: MoviesOnClickInterface) :
     RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
@@ -49,6 +51,10 @@ class MoviesAdapter(private var movieList: ArrayList<Result>) :
             tvTitle.text = movieList[position].originalTitle
             tvReleaseDate.text = movieList[position].releaseDate
             rbMovieRatting.rating = movieList[position].voteAverage.toFloat() / 2
+
+            movieItem.setOnClickListener {
+                itemOnClickInterface.onMovieItemClicked(position)
+            }
         }
     }
 
@@ -61,5 +67,6 @@ class MoviesAdapter(private var movieList: ArrayList<Result>) :
         var tvTitle: TextView = view.findViewById(R.id.tvTitle)
         var tvReleaseDate: TextView = view.findViewById(R.id.tvReleaseDate)
         var rbMovieRatting: RatingBar = view.findViewById(R.id.rbMovieRatting)
+        var movieItem: CardView = view.findViewById(R.id.movieItem)
     }
 }
